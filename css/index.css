@@ -141,7 +141,6 @@ table {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /*  */
 }
 
 /* General Styles */
@@ -290,8 +289,18 @@ p {
   margin: 2% 0 4%;
 }
 .container-learn-more button {
-  padding: 2% 4%;
-  width: 35%;
+  background-color: rgba(0, 0, 0, 0);
+  border: solid 2px black;
+  border-radius: 8px;
+  font-size: 1rem;
+  line-height: 1;
+  padding: 2.5%;
+  transition: background-color 300ms;
+  width: 34%;
+}
+.container-learn-more button:hover {
+  background-color: black;
+  color: white;
 }
 
 /* Bottom Section Styles */
