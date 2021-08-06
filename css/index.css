@@ -1,5 +1,5 @@
 /* 
-  Code formatted with "Prettier":
+  All my code was formatted using "Prettier":
   -- The Opinionated Code-Formatter --
 
   http://meyerweb.com/eric/tools/css/reset/ 
@@ -7,9 +7,7 @@
   License: none (public domain)
 
   CSS Reset Provided by Eric Meyer
-  * Removed Border/Line Height From Reset
 */
-
 html,
 body,
 div,
@@ -212,7 +210,7 @@ p {
   margin: 0;
 }
 
-/* Middle Section Styles - General/Home Page*/
+/* Middle Section Styles - Home Page */
 .middle-content {
   border-bottom: 1px dashed black;
   margin-bottom: 20px;

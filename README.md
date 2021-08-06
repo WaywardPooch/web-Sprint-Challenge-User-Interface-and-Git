@@ -34,13 +34,27 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. If you were to describe semantic HTML to the next cohort of students, what would you say?
 
+   - Semantic HTML means writing your HTML code in such a way that your tags, themselves, are self-explanatory of the content they hold within. If you _don't_ write out your HTML semantically, you create accessibility problems, like preventing screen readers from properly understanding where your content starts and stops, for people with disabilities.
+
 2. Name two big differences between `display: block;` and `display: inline;`.
+
+   - With `display: block;` elements take up the entire width that is available to them, and break all content that follows them to a new line. With `display: inline;` elements only take up the space they need, and can remain "inline" with elements beside them without breaking content to a new line. However, inline elements **cannot** take a `width` nor a `height` value.
 
 3. What are the 4 areas of the box model?
 
+   - The box model consists of four parts:
+     1. The "core" of the box is named the `content`.
+     2. Directly outside of the content is the `padding`.
+     3. The `border` contains the padding and content, inside.
+     4. The `margin` provides space outside of the border for separating other "boxes" from one-another.
+
 4. While using flexbox, what axis does the following property work on: `align-items: center`?
 
+   - The `align-items` property affects the **cross-axis** of your flexbox. By default, flexbox's main-axis is horizontal, and the cross-axis, which is _always_ perpendicular to the main-axis, is vertical. If you adjust your `flex-direction` to `column`, this will "rotate" your axes, making the main-axis vertical and the cross-axis horizontal.
+
 5. Explain why git is valuable to a team of developers.
+
+   - `git` is a system of version control vital to a team of developers working on a large project, as it allows team members to edit their own copy of a codebase at the same time as everyone else, while keeping records of what files they change at what time. When the day comes to merge code together, changes between branches can be reviewed from pull requests, and pulled in when appropriate, instead of having everybody constantly change the primary codebase and cause team members to become out of sync with each other. `git` saves your code in snapshots, keeping a full copy of each revision of your code intact for future reference, instead of simply tracking only what changes, making it easy to review past versions of code without being forced to painstakingly track changes all the time, manually.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section _will_ prevent you from passing this challenge.
 
@@ -54,7 +68,7 @@ You are expected to be able to answer all these questions. Your responses contri
 
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's Repo). **Please don't merge your own pull request**
+- [x] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's Repo). **Please don't merge your own pull request**
 
 ## Minimum Viable Product
 
@@ -64,30 +78,30 @@ Your finished project must include all of the following requirements:
 
 [Review the provided design file for the home page](design-files/home.png). Notice the navigation and header images are missing.
 
-- [ ] Build the HTML and CSS to create the missing navigation and header.
-- [ ] Link the `About` navigation item to the [about.html](about.html) page
+- [x] Build the HTML and CSS to create the missing navigation and header.
+- [x] Link the `About` navigation item to the [about.html](about.html) page
 
 You will also notice there are 10 boxes on the home page that need background colors. Use this list below to correctly style each box (Note: inline styles are not acceptable. All styles should be written in your index.css file):
 
-- [ ] box1: `teal`
-- [ ] box2: `gold`
-- [ ] box3: `cadetblue`
-- [ ] box4: `coral`
-- [ ] box5: `crimson`
-- [ ] box6: `forestgreen`
-- [ ] box7: `darkorchid`
-- [ ] box8: `hotpink`
-- [ ] box9: `indigo`
-- [ ] box10: `dodgerblue`
+- [x] box1: `teal`
+- [x] box2: `gold`
+- [x] box3: `cadetblue`
+- [x] box4: `coral`
+- [x] box5: `crimson`
+- [x] box6: `forestgreen`
+- [x] box7: `darkorchid`
+- [x] box8: `hotpink`
+- [x] box9: `indigo`
+- [x] box10: `dodgerblue`
 
 ### About Page
 
 [Review the provided design file for the about page](design-files/about.png). You have been provided the HTML wrapper, footer, and page content for the about page. Create the rest of the missing HTML and CSS to match the design file.
 
-- [ ] Copy and paste your home page navigation and header into the about page
-- [ ] Update the header image with the about page image
-- [ ] Link the `Home` navigation item back to the `index.html` page.
-- [ ] Build the rest of the about page layout to match the design
+- [x] Copy and paste your home page navigation and header into the about page
+- [x] Update the header image with the about page image
+- [x] Link the `Home` navigation item back to the `index.html` page.
+- [x] Build the rest of the about page layout to match the design
 
 In your solution, it is essential that you follow best practices and produce clean and professional results. Schedule time to review, refine, and assess your work and perform basic professional polishing including spell-checking and grammar-checking on your work. It is better to submit a challenge that meets MVP than one that attempts too much and does not.
 
