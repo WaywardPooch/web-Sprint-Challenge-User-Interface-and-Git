@@ -163,7 +163,11 @@ p {
 }
 .container {
   margin: 0 auto;
-  width: 800px;
+  max-width: 800px;
+}
+.container .about-page {
+  margin: 0 auto;
+  max-width: 800px;
 }
 
 /* Header Section Styles */
@@ -197,11 +201,15 @@ p {
   justify-content: space-evenly;
   margin-bottom: 20px;
 }
-.top-content .text-container {
+.top-content .text-container,
+.top-content .text-container-wide {
   margin: 2.5% 0;
   padding-bottom: 20px;
   padding: 0 1%;
   width: 48%;
+}
+.top-content .text-container-wide {
+  width: 96%;
 }
 .cover-image-container {
   margin: 0;
