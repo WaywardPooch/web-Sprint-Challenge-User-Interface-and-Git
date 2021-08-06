@@ -1,146 +1,337 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+/* 
+  All my code was formatted using "Prettier":
+  -- The Opinionated Code-Formatter --
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+  http://meyerweb.com/eric/tools/css/reset/ 
+  v2.0 | 20110126
+  License: none (public domain)
+
+  CSS Reset Provided by Eric Meyer
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  font-size: 100%;
+  font: inherit;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
+/* Universal Styles */
 * {
-    box-sizing: border-box;
+  /* border: solid 1px grey; */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-html, body {
-    height: 100%;
-    font-family: 'Roboto', sans-serif;
+/* General Styles */
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  min-height: 100%;
 }
-
-h1, h2, h3, h4, h5 {
-    font-size: 18px;
-    margin-bottom: 15px;
-    font-family: 'Rubik', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  margin-bottom: 15px;
 }
-
 p {
-    line-height: 1.4;
+  line-height: 1.4;
 }
-
 .container {
-    width: 800px;
-    margin: 0 auto;
+  margin: 0 auto;
+  max-width: 800px;
+}
+.text-container,
+.text-container-wide {
+  margin: 2.5% 0;
+  padding: 0 0.5%;
+}
+.text-container {
+  width: 48%;
+}
+.text-container-wide {
+  width: 96%;
 }
 
+/* Header Section Styles */
+.navigation-header {
+  display: flex;
+  margin: 2% 0 5%;
+  width: 100%;
+}
+.navigation-header .navigation-logo {
+  align-items: flex-end;
+  display: flex;
+  justify-content: center;
+  margin-right: 1%;
+}
+.navigation-header .navigation-links {
+  align-self: flex-end;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.navigation-header .navigation-links a {
+  color: black;
+  text-decoration: none;
+}
+
+/* Top Section Styles */
 .top-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+  border-bottom: 1px dashed black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+.cover-image-container {
+  margin: 0;
 }
 
-.top-content .text-container {
-    width: 48%;
-    padding: 0 1%;
-    padding-bottom: 20px;  
-}
-
+/* Middle Section Styles - Home Page */
 .middle-content {
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+  border-bottom: 1px dashed black;
+  margin-bottom: 20px;
 }
-
 .middle-content h2 {
-    padding: 0 2%;
-    margin-bottom: 0;
+  margin-bottom: 0;
+  padding: 0 2%;
 }
-
 .middle-content .boxes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: bold;
+  justify-content: space-evenly;
 }
-
 .middle-content .boxes .box {
-    width: 12.5%;
-    height: 100px;
-    background: black;
-    margin: 20px 2.5%;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  background: black;
+  color: white;
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  margin: 20px 2.5%;
+  width: 12.5%;
+}
+.boxes .box.box1 {
+  background-color: teal;
+}
+.boxes .box.box2 {
+  background-color: gold;
+}
+.boxes .box.box3 {
+  background-color: cadetblue;
+}
+.boxes .box.box4 {
+  background-color: coral;
+}
+.boxes .box.box5 {
+  background-color: crimson;
+}
+.boxes .box.box6 {
+  background-color: forestgreen;
+}
+.boxes .box.box7 {
+  background-color: darkorchid;
+}
+.boxes .box.box8 {
+  background-color: hotpink;
+}
+.boxes .box.box9 {
+  background-color: indigo;
+}
+.boxes .box.box10 {
+  background-color: dodgerblue;
 }
 
+/* Middle Section Styles - About Page */
+.gallery-learn-more {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+.container-learn-more {
+  border-bottom: 1px dashed black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 1% 2% 6%;
+  padding-bottom: 2.5%;
+  width: 46%;
+}
+.container-learn-more h2 {
+  margin: 4% 0 2%;
+}
+.container-learn-more p {
+  margin: 2% 0 4%;
+}
+.container-learn-more button {
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 8px;
+  border: solid 2px black;
+  font-size: 1rem;
+  line-height: 1;
+  padding: 2.5%;
+  transition: background-color 300ms;
+  width: 34%;
+}
+.container-learn-more button:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Bottom Section Styles */
 .bottom-content {
-    display: flex;
-    margin: 0 2% 20px;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
-
-.bottom-content .text-container {
-    padding-right: 4%;
-}
-
 .bottom-content .text-container:last-child {
-    padding-right: 0;
+  padding-right: 0;
+}
+.bottom-content .text-container {
+  margin: 0 1.5% 2.5%;
+}
+.bottom-content .text-container-wide {
+  margin: 0 1.5% 5%;
 }
 
+/* Footer Section Styles */
 footer {
-    width: 100%;
-    background: black;
+  background: black;
+  width: 100%;
 }
-
 footer nav {
-    width: 60%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 2%;
-    font-size: 14px;
+  align-items: center;
+  display: flex;
+  font-size: 14px;
+  justify-content: space-between;
+  padding: 20px 2%;
+  width: 60%;
 }
-
 footer nav a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
 }
