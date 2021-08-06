@@ -137,7 +137,7 @@ table {
 
 /* Universal Styles */
 * {
-  border: solid 1px grey;
+  /* border: solid 1px grey; */
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -169,19 +169,24 @@ p {
 /* Header Section Styles */
 .navigation-header {
   display: flex;
-  padding: 2% 0;
+  margin: 2% 0 5%;
   width: 100%;
 }
 .navigation-header .navigation-logo {
   align-items: flex-end;
   display: flex;
   justify-content: center;
+  margin-right: 1%;
 }
 .navigation-header .navigation-links {
   align-self: flex-end;
   display: flex;
   justify-content: space-around;
   width: 100%;
+}
+.navigation-header .navigation-links a {
+  color: black;
+  text-decoration: none;
 }
 
 /* Top Section Styles */
@@ -193,9 +198,13 @@ p {
   margin-bottom: 20px;
 }
 .top-content .text-container {
+  margin: 2.5% 0;
   padding-bottom: 20px;
   padding: 0 1%;
   width: 48%;
+}
+.cover-image-container {
+  margin: 0;
 }
 
 /* Middle Section Styles */
@@ -210,6 +219,7 @@ p {
 .middle-content .boxes {
   display: flex;
   flex-wrap: wrap;
+  font-weight: bold;
   justify-content: space-evenly;
 }
 .middle-content .boxes .box {
@@ -255,5 +265,6 @@ footer nav {
 
 footer nav a {
   color: white;
+  font-weight: bold;
   text-decoration: none;
 }
