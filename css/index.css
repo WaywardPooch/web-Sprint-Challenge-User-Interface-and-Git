@@ -232,34 +232,34 @@ p {
   margin: 20px 2.5%;
   width: 12.5%;
 }
-.box1 {
+.boxes .box.box1 {
   background-color: teal;
 }
-.box2 {
+.boxes .box.box2 {
   background-color: gold;
 }
-.box3 {
+.boxes .box.box3 {
   background-color: cadetblue;
 }
-.box4 {
+.boxes .box.box4 {
   background-color: coral;
 }
-.box5 {
+.boxes .box.box5 {
   background-color: crimson;
 }
-.box6 {
+.boxes .box.box6 {
   background-color: forestgreen;
 }
-.box7 {
+.boxes .box.box7 {
   background-color: darkorchid;
 }
-.box8 {
+.boxes .box.box8 {
   background-color: hotpink;
 }
-.box9 {
+.boxes .box.box9 {
   background-color: indigo;
 }
-.box10 {
+.boxes .box.box10 {
   background-color: dodgerblue;
 }
 
