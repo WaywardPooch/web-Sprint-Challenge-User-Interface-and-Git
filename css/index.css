@@ -166,6 +166,21 @@ p {
   width: 800px;
 }
 
+/* Header Section Styles */
+.navigation-header {
+  display: flex;
+  padding: 2% 0;
+}
+.navigation-header .navigation-logo {
+  align-items: center;
+  justify-content: center;
+}
+.navigation-header .navigation-links {
+  align-self: flex-end;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
 /* Top Section Styles */
 .top-content {
   border-bottom: 1px dashed black;
