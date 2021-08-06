@@ -137,7 +137,7 @@ table {
 
 /* Universal Styles */
 * {
-  /* border: solid 1px grey; */
+  border: solid 1px grey;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -209,13 +209,13 @@ p {
   width: 48%;
 }
 .top-content .text-container-wide {
-  width: 97%;
+  width: 96%;
 }
 .cover-image-container {
   margin: 0;
 }
 
-/* Middle Section Styles */
+/* Middle Section Styles - General/Home Page*/
 .middle-content {
   border-bottom: 1px dashed black;
   margin-bottom: 20px;
@@ -271,17 +271,24 @@ p {
   background-color: dodgerblue;
 }
 
+/* Middle Section Styles - About Page */
+.gallery-learn-more {
+  display: flex;
+  flex-flow: row wrap;
+}
+.container-learn-more {
+  width: 48%;
+}
+
 /* Bottom Section Styles */
 .bottom-content {
   display: flex;
   justify-content: space-around;
   margin: 0 2% 20px;
 }
-
 .bottom-content .text-container {
   padding-right: 4%;
 }
-
 .bottom-content .text-container:last-child {
   padding-right: 0;
 }
@@ -291,7 +298,6 @@ footer {
   background: black;
   width: 100%;
 }
-
 footer nav {
   align-items: center;
   display: flex;
@@ -300,7 +306,6 @@ footer nav {
   padding: 20px 2%;
   width: 60%;
 }
-
 footer nav a {
   color: white;
   font-weight: bold;
