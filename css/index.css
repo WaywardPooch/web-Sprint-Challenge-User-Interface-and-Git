@@ -149,7 +149,6 @@ body {
   font-family: "Roboto", sans-serif;
   height: 100%;
 }
-
 h1,
 h2,
 h3,
@@ -159,16 +158,15 @@ h5 {
   font-size: 18px;
   margin-bottom: 15px;
 }
-
 p {
   line-height: 1.4;
 }
-
 .container {
   margin: 0 auto;
   width: 800px;
 }
 
+/* Top Section Styles */
 .top-content {
   border-bottom: 1px dashed black;
   display: flex;
@@ -176,29 +174,26 @@ p {
   justify-content: space-evenly;
   margin-bottom: 20px;
 }
-
 .top-content .text-container {
   padding-bottom: 20px;
   padding: 0 1%;
   width: 48%;
 }
 
+/* Middle Section Styles */
 .middle-content {
   border-bottom: 1px dashed black;
   margin-bottom: 20px;
 }
-
 .middle-content h2 {
   margin-bottom: 0;
   padding: 0 2%;
 }
-
 .middle-content .boxes {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-
 .middle-content .boxes .box {
   align-items: center;
   background: black;
@@ -210,6 +205,7 @@ p {
   width: 12.5%;
 }
 
+/* Bottom Section Styles */
 .bottom-content {
   display: flex;
   justify-content: space-around;
@@ -224,6 +220,7 @@ p {
   padding-right: 0;
 }
 
+/* Footer Section Styles */
 footer {
   background: black;
   width: 100%;
