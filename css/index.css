@@ -170,14 +170,17 @@ p {
 .navigation-header {
   display: flex;
   padding: 2% 0;
+  width: 100%;
 }
 .navigation-header .navigation-logo {
-  align-items: center;
+  align-items: flex-end;
+  display: flex;
   justify-content: center;
 }
 .navigation-header .navigation-links {
   align-self: flex-end;
-  justify-content: space-evenly;
+  display: flex;
+  justify-content: space-around;
   width: 100%;
 }
 
