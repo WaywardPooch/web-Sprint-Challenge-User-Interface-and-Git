@@ -137,7 +137,7 @@ table {
 
 /* Universal Styles */
 * {
-  border: solid 1px grey;
+  /* border: solid 1px grey; */
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -168,7 +168,7 @@ p {
 .text-container,
 .text-container-wide {
   margin: 2.5% 0;
-  padding: 0 1%;
+  padding: 0 0.5%;
 }
 .text-container {
   width: 48%;
