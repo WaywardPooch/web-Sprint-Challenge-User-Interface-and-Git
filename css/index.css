@@ -141,13 +141,14 @@ table {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  /*  */
 }
 
 /* General Styles */
 html,
 body {
   font-family: "Roboto", sans-serif;
-  height: 100%;
+  min-height: 100%;
 }
 h1,
 h2,
@@ -162,10 +163,6 @@ p {
   line-height: 1.4;
 }
 .container {
-  margin: 0 auto;
-  max-width: 800px;
-}
-.container .about-page {
   margin: 0 auto;
   max-width: 800px;
 }
@@ -275,9 +272,26 @@ p {
 .gallery-learn-more {
   display: flex;
   flex-flow: row wrap;
+  justify-content: space-evenly;
 }
 .container-learn-more {
-  width: 48%;
+  border-bottom: 1px dashed black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 0 2% 4%;
+  padding-bottom: 2%;
+  width: 46%;
+}
+.container-learn-more h2 {
+  margin: 4% 0 2%;
+}
+.container-learn-more p {
+  margin: 2% 0 4%;
+}
+.container-learn-more button {
+  padding: 2% 4%;
+  width: 35%;
 }
 
 /* Bottom Section Styles */
